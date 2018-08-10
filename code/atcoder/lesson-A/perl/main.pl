@@ -12,10 +12,12 @@ sub _main {
 
 	# 1st line
 	my $line = <STDIN>;
+	chomp($line);
 	my $a = int($line);
 
 	# 2nd line
 	$line = <STDIN>;
+	chomp($line);
 	my ($b, $c) = split(' ', $line);
 
 	# 3rd line
@@ -24,7 +26,7 @@ sub _main {
 	my $s = $line;
 
 	# summary
-	printf("a + b + c: [%s], s: [%s]\n", $a + $b + $c, $line);
+	printf("a + b + c: [%s], s: [%s]\n", $a + $b + $c, $s);
 }
 
 _main();
