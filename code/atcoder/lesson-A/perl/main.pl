@@ -15,11 +15,11 @@ sub _main {
 	my $a = int($line);
 
 	# 2nd line
-	my $line = <STDIN>;
+	$line = <STDIN>;
 	my ($b, $c) = split(' ', $line);
 
 	# 3rd line
-	my $line = <STDIN>;
+	$line = <STDIN>;
 	chomp($line);
 	my $s = $line;
 
