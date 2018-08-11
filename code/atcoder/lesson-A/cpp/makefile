@@ -1,3 +1,3 @@
-main.app: main.cpp makefile
-	g++ main.cpp -o main.app -Wall
+main: main.cpp makefile
+	g++ main.cpp -o main -Wall
 	
