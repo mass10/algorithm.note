@@ -42,9 +42,9 @@ def _enum_samples():
 def _main(argv):
 
 	samples = _enum_samples()
-	print(samples)
 	result = _sort(samples)
-	print(samples)
-	print(result)
+	# print(result)
+	for e in result:
+		print(e)
 
 _main(sys.argv)
