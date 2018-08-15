@@ -24,8 +24,24 @@ def _sort(args):
 		pass
 	return response
 
+def _enum_samples():
+
+	# samples = [-1, 2, 10, 5, -9, 11, 6, 2.4, 6.5, 6.7, 9.01]
+
+	samples = []
+	while True:
+		line = sys.stdin.readline()
+		if line == "":
+			break
+		line = line.rstrip()
+		if line == "":
+			continue
+		samples.append(float(line))
+	return samples
+
 def _main(argv):
-	samples = [-1, 2, 10, 5, -9, 11, 6, 2.4, 6.5, 6.7, 9.01]
+
+	samples = _enum_samples()
 	print(samples)
 	result = _sort(samples)
 	print(samples)
